@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Inventário Academia
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<header class="menu-principal">
+
+    <main> 
+    <div class="header1"> 
+        <div class="logo">
+            <h3>Academia do Programador</h3>
+        </div>
+    </div>
+        <main class="coluna100 menu-urls">
+        
+    
+    <div class="header2">
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Cadastro de Equipamentos</a></li>
+                    <li><a href="#">Abertura de Chamados</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    </main>
+</header>
+
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Título</label>
+                        <input type="text" name="titulo" id="titulo" placeholder="Título do chamado"> 
+                    </div>
+                    <div>
+                        <label>Descrição</label>
+                        <input type="text" name="descricao" id="descricao" placeholder="Descrição do chamado" >
+                    </div>
+                    <div>
+                        <label>Equipamento</label>
+                        <input type="text" name="equipa" id="equipa" placeholder="Nome do equipamento" >
+                    </div>
+                    
+                    <div>
+                        <label>Abertura do Chamado</label>
+                        <input type="date" name="aber" id="aber">
+                    </div>   
+                    <div>
+                        <label>Id</label><label class="validation-error hide" id="idenValidationError">Preencha aqui</label>
+                        <input type="number" name="iden" id="iden">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Cadastrar">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Título</th>
+                            <th>Descrição</th>
+                            <th>Equipamento</th>
+                            <th>Abertura do Chamado</th>
+                            <th>Id</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="chamado.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Inventário Academia
+    </title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+
+<body>
+<header class="menu-principal">
+
+    <main> 
+    <div class="header1"> 
+        <div class="logo">
+            <h3>Academia do Programador</h3>
+        </div>
+    </div>
+        <main class="coluna100 menu-urls">
+        
+    
+    <div class="header2">
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Cadastro de Equipamentos</a></li>
+                    <li><a href="chamados.html">Abertura de Chamados</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    </main>
+</header>
+
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Nome</label>
+                        <input type="text" name="nome" id="nome" minlength="6" placeholder="Nome do produto" >
+                    </div>
+                    <div>
+                        <label>Preço</label>
+                        <input type="number" name="pricing" id="pricing">
+                    </div>
+                    <div>
+                        <label>Id</label><label class="validation-error hide" id="idenValidationError">Preencha aqui</label>
+                        <input type="number" name="iden" id="iden">
+                    </div>
+                    <div>
+                        <label>Fabricação</label>
+                        <input type="date" name="fabri" id="fabri">
+                    </div>   
+                    <div>
+                        <label>Fabricante</label>
+                        <input type="text" name="fabrica" id="fabrica" placeholder="Fabricante do produto">
+                    </div>     
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Cadastrar">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Preço</th>
+                            <th>ID</th>
+                            <th>Fabricação</th>
+                            <th>Fabricante</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
